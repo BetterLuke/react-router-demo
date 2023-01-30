@@ -3,12 +3,17 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import GreetingPage from "./pages/GreetingPage";
+import HelloPage from "./pages/HelloPage";
 import reportWebVitals from "./reportWebVitals";
 
 const router = createBrowserRouter([
   {
     path: "/greetings",
     element: <GreetingPage />,
+  },
+  {
+    path: "/hello",
+    element: <HelloPage />,
   },
 ]);
 
